@@ -17,6 +17,14 @@ public class UserController {
         sc = new Scanner(System.in);
     }
 
+    public void startFileReadingMode(Scanner scanner) {
+        this.sc = scanner;
+    }
+
+    public void stopFileReadingMode() {
+        this.sc = new Scanner(System.in);
+    }
+
     public void createAttendant() {
         this.createUser(UserType.ADMIN);
     }

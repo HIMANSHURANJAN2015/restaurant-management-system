@@ -23,6 +23,14 @@ public class RestaurantController {
         sc = new Scanner(System.in);
     }
 
+    public void startFileReadingMode(Scanner scanner) {
+        this.sc = scanner;
+    }
+
+    public void stopFileReadingMode() {
+        this.sc = new Scanner(System.in);
+    }
+
     public void create() {
         /*
             Like parking-lot-management system, instead of request and response DTO,

@@ -26,11 +26,11 @@ public class RestuarantUtils {
         System.out.println(emptyLine);
         List<MenuItem> menuItemList = restaurant.getMenuItems();
         for(MenuItem menuItem : menuItemList) {
-            System.out.printf("|   %-74s   |\n", menuItem.getId()+ "   " +menuItem.getName()+"   "+menuItem.getPrice());
+            System.out.printf("|   %-74s   |\n", menuItem.getId()+ "   " +menuItem.getName()+"   Rs "+menuItem.getPrice());
         }
         System.out.println(border); // Divider border
 
-        System.out.printf("|   %-74s   |\n", "Current attendants:");
+        System.out.printf("|   %-74s   |\n", "Current restaurant employees:");
         System.out.println(emptyLine);
         List<User> attendantList = restaurant.getAttendants();
         for(User user : attendantList) {

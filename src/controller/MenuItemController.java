@@ -19,6 +19,14 @@ public class MenuItemController {
         this.scanner = new Scanner(System.in);
     }
 
+    public void startFileReadingMode(Scanner scanner) {
+        this.scanner = scanner;
+    }
+
+    public void stopFileReadingMode() {
+        this.scanner = new Scanner(System.in);
+    }
+
     public void addMenuItem(){
         /*
             Like parking-lot-management system, instead of request and response DTO,
